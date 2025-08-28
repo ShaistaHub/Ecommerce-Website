@@ -27,7 +27,7 @@ const ProductContextProvider = ({ children }) => {
     try {
 
       setLoading(true);
-      const response = await axios.get("https://ecommerce-website-emgo.vercel.app/api/products");
+      const response = await axios.get("https://ecommerce-website-j5ce.vercel.app/api/products");
       setProduct(response.data);
       // setCart(response.data)
       setLoading(false);
