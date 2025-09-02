@@ -28,7 +28,8 @@ const ProductContextProvider = ({ children }) => {
 
       setLoading(true);
       // const response = await axios.get("https://product-website-9d1j.onrender.com/api/products");
-      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/products`);
+VITE_API_URL=http://localhost:3000
+      const response = await axios.get(`${process.env.VITE_API_URL}/api/products`);
       setProduct(response.data);
       // setCart(response.data)
       setLoading(false);
