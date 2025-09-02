@@ -7,14 +7,14 @@ import bcrypt, { compare } from "bcrypt"
 import jwt from 'jsonwebtoken'
 import crypto from  'crypto'
 import { Certificate, hash } from 'crypto';
-import productModel from '../Models/ProductModel.js'
-import User from '../Models/Auth.js';
-import cloudinary from '../cloudinary.js';
+import productModel from './Models/ProductModel.js';
+import User from './Models/Auth.js';
+import cloudinary from './cloudinary.js';
 app.use('/uploads', express.static('uploads')); // Serve uploaded files
-import upload from '../multer.js';
+import upload from './multer.js';
 import { fileURLToPath } from 'url';
 import path from 'path';
-import router from '../routes/orderRoutes.js';
+import router from './routes/orderRoutes.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
